@@ -1,0 +1,46 @@
+@media screen and (max-width: 372px) {
+	.logo {
+		height: 35px;
+	}
+	.navbar-btns .btn-primary {
+		padding: 4px 20px;
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 523px) {
+	.heroSwiper .swiper-button-next,
+	.heroSwiper .swiper-button-prev {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 918px) {
+	.four-section-mobile {
+		display: none;
+	}
+	.download-app-area,
+	.benefit-area {
+		padding: 50px 30px;
+	}
+}
+@media screen and (max-width: 338px) {
+	.download-info img {
+		width: 100px;
+		margin: 0 10px;
+	}
+	.book-cab-area,
+	.call-us-area {
+		padding: 50px 30px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.benefit-area {
+		clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+		clip-path: none;
+	}
+}
+@media screen and (max-width: 576px) {
+	.book-cab-area .text-end {
+		text-align: start !important;
+	}
+}
