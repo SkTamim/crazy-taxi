@@ -17,6 +17,12 @@ cooseCarBtns.forEach((btn, index, array) => {
 			cooseCarImg.setAttribute("src", "images/choose-car-3.png");
 			btn.classList.add("active");
 		} else if (index === 3) {
+			cooseCarImg.setAttribute("src", "images/choose-car-1.png");
+			btn.classList.add("active");
+		} else if (index === 4) {
+			cooseCarImg.setAttribute("src", "images/choose-car-2.png");
+			btn.classList.add("active");
+		} else if (index === 5) {
 			cooseCarImg.setAttribute("src", "images/choose-car-4.png");
 			btn.classList.add("active");
 		}

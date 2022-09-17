@@ -105,13 +105,19 @@
             <div class="swiper chooseCarSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide d-flex justify-content-center">
-                        <button class="btn-primary-outline choose-car-btn active">Auto</button>
-                    </div>
-                    <div class="swiper-slide d-flex justify-content-center">
-                        <button class="btn-primary-outline choose-car-btn">Small/mini</button>
+                        <button class="btn-primary-outline choose-car-btn active">Mini</button>
                     </div>
                     <div class="swiper-slide d-flex justify-content-center">
                         <button class="btn-primary-outline choose-car-btn">Sedan</button>
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <button class="btn-primary-outline choose-car-btn">Suv</button>
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <button class="btn-primary-outline choose-car-btn">Innova Crysta</button>
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                        <button class="btn-primary-outline choose-car-btn">Tempo Traveller</button>
                     </div>
                     <div class="swiper-slide d-flex justify-content-center">
                         <button class="btn-primary-outline choose-car-btn">Premium</button>
@@ -402,14 +408,18 @@
                 prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                690: {
+
+                1185: {
+                    slidesPerView: 6,
+                },
+                993: {
                     slidesPerView: 4,
                 },
-                532: {
+                786: {
                     slidesPerView: 3,
                 },
-                408: {
-                    slidesPerView: 2
+                587: {
+                    slidesPerView: 2,
                 }
             },
             slidesPerView: 1,

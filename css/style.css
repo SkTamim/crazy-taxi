@@ -119,7 +119,7 @@ img {
 
 /* CHOOSE CAR SECTION START */
 .choose-car-butns {
-	max-width: 700px;
+	max-width: 1200px;
 	display: flex;
 	justify-content: space-between;
 }
