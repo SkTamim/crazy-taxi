@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxiCab - About Us</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS FILE CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP ICON CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- CUSTOM CSS FILE LINK -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!-- MAIN NAVIGATION BAR START -->
+    <nav class="navbar bg-white navbar-expand-lg nav-shadow">
+        <div class="container align-items-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="btn-primary" href="book-now.html" style="width:max-content;">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="container">
+        <ol class="breadcrumb mt-4">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item"><a href="cab-listing.html" class="text-decoration-none">Select Car</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Booking</li>
+        </ol>
+    </nav>
+
+
+    <!-- MIAN SECTION START -->
+    <main class="container my-4">
+
+        <div class="row">
+            <div class="col-lg-7">
+                <form class="pickup-details-form">
+                    <h5 class="text-uppercase text-center fw-bold">Contact & Pickup Details</h5>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-500">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-500">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobile" class="form-label fw-500">Mobile</label>
+                        <div class="row">
+                            <div class="col-2">
+                                <select class="form-select">
+                                    <option selected>+91</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+31">+31</option>
+                                    <option value="+394">+394</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+31">+31</option>
+                                    <option value="+394">+394</option>
+                                </select>
+                            </div>
+                            <div class="col-10">
+                                <input type="tel" class="form-control" id="mobile" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="pickup" class="form-label fw-500">Pickup</label>
+                        <input type="text" class="form-control" id="pickup" placeholder="Enter your pickup address">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="drop" class="form-label fw-500">Drop</label>
+                        <input type="text" class="form-control" id="drop" placeholder="Enter your drop address">
+                    </div>
+
+                    <div class="form-check d-flex justify-content-center">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label ms-2" for="flexCheckChecked">
+                            Send me trip updates on WhatsApp
+                            <i class="bi bi-info-circle text-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Key information like itinerary, Driver & Payment details "></i>
+                        </label>
+                    </div>
+
+                    <button class="btn-secondary w-100 mt-3">Proceed</button>
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <div class="promiss-box">
+                    <h6 class="text-center fw-bold"> Our Promise of Quality </h6>
+
+                    <div class="d-flex justify-content-center">
+                        <img src="images/vintage.png" alt="Image">
+                        <img src="images/our-drivers.png" alt="Image">
+                        <img src="images/rating.png" alt="Image">
+                    </div>
+                </div>
+                <div class="details-box">
+                    <h6 class="text-center fw-bold mb-3"> Your Booking Details </h6>
+
+                    <p class="fw-500 d-flex justify-content-between flex-wrap">
+                        <sapn class="me-2">Itinerary :</sapn>
+                        <span>Kolkata > Hooghly > Kolkata</span>
+                    </p>
+                    <p class="fw-500 d-flex justify-content-between flex-wrap">
+                        <sapn class="me-2">Pickup Date :</sapn>
+                        <span>28th September 2022 at 7:30 AM </span>
+                    </p>
+                    <p class="fw-500 d-flex justify-content-between flex-wrap">
+                        <sapn class="me-2">Return Date :</sapn>
+                        <span>28th September 2022</span>
+                    </p>
+                    <p class="fw-500 d-flex justify-content-between flex-wrap">
+                        <sapn class="me-2">Car Type : </sapn>
+                        <span>Toyota Etios or Equivalent</span>
+                    </p>
+                    <p class="fw-500 d-flex justify-content-between flex-wrap">
+                        <sapn class="me-2">Total Fare :</sapn>
+                        <span> &#x20B9; 2969</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- MIAN SECTION END -->
+
+
+
+    <!-- MAIN FOOTER START -->
+    <footer class="main-footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-4">
+                    <h5>About Crazy Cab</h5>
+
+                    <p class="text-14">Lorem ipsum dolor sitt, eveniet asperiores? Consequuntur similique magni doloribus iusto veritatis molestias eligendi, harum blanditiis commodi perspiciatis ipsum reiciendis voluptatibus aperiam obcaecati recusandae?</p>
+
+                    <div class="social-icons d-flex">
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-dribbble"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-vimeo"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-flex legal">
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privecy Policy</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 my-4 d-flex flex-wrap justify-content-around">
+                    <div class="footer-links">
+                        <h5>Services</h5>
+                        <a href="#">Spot Booking</a>
+                        <a href="#">Package Booking</a>
+                        <a href="#">Airport Booking</a>
+                        <a href="#">Fleet Management</a>
+                        <a href="#">Became a Dirver</a>
+                    </div>
+                    <div class="footer-links">
+                        <h5>About Us</h5>
+                        <a href="#">Company</a>
+                        <a href="#">Testimonials</a>
+                        <a href="#">Contacts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- MAIN FOOTER END -->
+
+
+
+    <!-- CUSTOM JS FILE -->
+    <script src="js/main.js"></script>
+
+    <!-- BOOTSTRAP JS FILE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+    <script>
+        // Tooltip initialization 
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
