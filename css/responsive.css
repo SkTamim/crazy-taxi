@@ -38,6 +38,10 @@
 		clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
 		clip-path: none;
 	}
+	.pickup-info {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 @media screen and (max-width: 576px) {
 	.book-cab-area .text-end {
@@ -55,7 +59,5 @@
 	}
 	.book-now-section {
 		padding: 20px 10px;
-	}
-	.book-now-section .nav-link {
 	}
 }

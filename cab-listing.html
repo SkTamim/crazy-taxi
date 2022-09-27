@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxiCab - About Us</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS FILE CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP ICON CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- CUSTOM CSS FILE LINK -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!-- MAIN NAVIGATION BAR START -->
+    <nav class="navbar bg-white navbar-expand-lg nav-shadow">
+        <div class="container align-items-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="btn-primary" href="book-now.html" style="width:max-content;">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="container">
+        <ol class="breadcrumb mt-4">
+            <li class="breadcrumb-item"><a href="book-now.html" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Select Car</li>
+        </ol>
+    </nav>
+
+    <!-- CAB INFO -->
+    <div class="container-fluid bg-light">
+        <div class="pickup-info container">
+            <p class="m-0 fw-500 mb-2">Kolkata > Hooghly (One way)</p>
+            <div class="mb-2">
+                <p class="fw-500 m-0">Pick up</p>
+                <p class="m-0">28-09-2022</p>
+            </div>
+            <div class="mb-2">
+                <p class="fw-500 m-0">Time</p>
+                <p class="m-0">7:15 PM</p>
+            </div>
+            <buttom class="modify-btn btn-secondary" data-bs-toggle="modal" data-bs-target="#ModifyModal">Modify</buttom>
+        </div>
+    </div>
+
+
+    <!-- MIAN SECTION START -->
+    <main class="container my-4">
+
+        <div class="cab-listing-item">
+            <div class="row g-0">
+                <div class="col-lg-4 d-flex car-img-section align-items-center justify-content-center">
+                    <img src="images/choose-car-1.png" alt="Car Image" class="car-img me-2">
+                    <div>
+                        <h5 class="fw-bold m-0">Toyota Etios</h5>
+                        <p class="m-0 text-14">
+                            or equivalent
+                            <i class="bi bi-info-circle text-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Includes AC cabs like Amaze, Aspire, Dzire, Etios, Fiesta, Manza, Verito, Xcent or Zest"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex listing-info-section align-items-center justify-content-center text-center">
+                    <div class="px-2">
+                        <img src="images/tax.png" alt="Tax Image" class="listing-info-icon">
+                        <p>Includes Toll, State Tax & GST</p>
+                    </div>
+                    <div class="px-2">
+                        <img src="images/certified.png" alt="certified Image" class="listing-info-icon">
+                        <p>Top Rated Cabs & Chauffeurs</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex listing-price-section align-items-center justify-content-evenly text-center">
+                    <div class="px-2">
+                        <h5 class="m-0 fw-bold text-success">₹3108</h5>
+                        <p class="m-0 fw-500 text-danger" style="font-size: 12px;"> Save ₹723</p>
+                    </div>
+                    <div class="px-2">
+                        <h5 class="m-0 fw-bold text-info">₹2385</h5>
+                        <p class="fw-500 m-0" style="font-size: 12px;">up to 50 km</p>
+                        <button class="listing-details-btn text-info">Details <i class="bi bi-chevron-down"></i></button>
+                    </div>
+
+                </div>
+                <div class="col-md-2 p-1 d-flex justify-content-center align-items-center mx-auto">
+                    <a href="#" class="btn-secondary">Select</a>
+                </div>
+            </div>
+
+            <div class="listing-details py-3 position-relative">
+                <ul class="nav nav-tabs" id="listingTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="Inclusions-tab" data-bs-toggle="tab" data-bs-target="#Inclusions" type="button" role="tab" aria-controls="Inclusions" aria-selected="true">Inclusions</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Exclusions-tab" data-bs-toggle="tab" data-bs-target="#Exclusions" type="button" role="tab" aria-controls="Exclusions" aria-selected="false">Exclusions</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Facilities-tab" data-bs-toggle="tab" data-bs-target="#Facilities" type="button" role="tab" aria-controls="Facilities" aria-selected="false">Facilities</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="TandC-tab" data-bs-toggle="tab" data-bs-target="#TandC" type="button" role="tab" aria-controls="TandC" aria-selected="false">T&C</button>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content my-3" id="listingTabContent">
+
+                    <div class="tab-pane fade show active" id="Inclusions" role="tabpanel" aria-labelledby="Inclusions-tab">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon1.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">Base Fare for 50 km</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon2.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">Driver Allowance</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon3.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">State Tax & Toll</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon4.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">GST (5%)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="Exclusions" role="tabpanel" aria-labelledby="Exclusions-tab">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon5.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2"> Pay ₹18/km after 50 km </p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon6.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">Multiple pickups/drops</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon7.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">Parking</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="Facilities" role="tabpanel" aria-labelledby="Facilities-tab">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon8.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2"> 4 seater</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon9.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">2 bags</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon10.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">AC</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="TandC" role="tabpanel" aria-labelledby="TandC-tab">
+                        <ul>
+                            <li class="text-14">Your Trip has a KM limit. If your usage exceeds this limit, you will be charged for the excess KM used.
+                            <li class="text-14">
+                                For driving between 9:45 pm to 6:00 am on any of the nights, an additional allowance will be applicable and is to be paid to the driver.
+                            </li>
+                            <li class="text-14">
+                                Your trip includes one pick up in Pick-up city and one drop to destination city. It does not include within city travel.
+                            </li>
+                            <li class="text-14">
+                                If your Trip has Hill climbs, cab AC may be switched off during such climbs.</li>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <button class="btn-close"></button>
+            </div>
+
+        </div>
+
+        <div class="cab-listing-item">
+            <div class="row g-0">
+                <div class="col-lg-4 d-flex car-img-section align-items-center justify-content-center">
+                    <img src="images/choose-car-1.png" alt="Car Image" class="car-img me-2">
+                    <div>
+                        <h5 class="fw-bold m-0">Toyota Etios</h5>
+                        <p class="m-0 text-14">
+                            or equivalent
+                            <i class="bi bi-info-circle text-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Includes AC cabs like Amaze, Aspire, Dzire, Etios, Fiesta, Manza, Verito, Xcent or Zest"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex listing-info-section align-items-center justify-content-center text-center">
+                    <div class="px-2">
+                        <img src="images/tax.png" alt="Tax Image" class="listing-info-icon">
+                        <p>Includes Toll, State Tax & GST</p>
+                    </div>
+                    <div class="px-2">
+                        <img src="images/certified.png" alt="certified Image" class="listing-info-icon">
+                        <p>Top Rated Cabs & Chauffeurs</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex listing-price-section align-items-center justify-content-evenly text-center">
+                    <div class="px-2">
+                        <h5 class="m-0 fw-bold text-success">₹3108</h5>
+                        <p class="m-0 fw-500 text-danger" style="font-size: 12px;"> Save ₹723</p>
+                    </div>
+                    <div class="px-2">
+                        <h5 class="m-0 fw-bold text-info">₹2385</h5>
+                        <p class="fw-500 m-0" style="font-size: 12px;">up to 50 km</p>
+                        <button class="listing-details-btn text-info">Details <i class="bi bi-chevron-down"></i></button>
+                    </div>
+
+                </div>
+                <div class="col-md-2 p-1 d-flex justify-content-center align-items-center mx-auto">
+                    <a href="#" class="btn-secondary">Select</a>
+                </div>
+            </div>
+
+            <div class="listing-details py-3 position-relative">
+                <ul class="nav nav-tabs" id="listingTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="Inclusions-tab" data-bs-toggle="tab" data-bs-target="#Inclusions" type="button" role="tab" aria-controls="Inclusions" aria-selected="true">Inclusions</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Exclusions-tab" data-bs-toggle="tab" data-bs-target="#Exclusions" type="button" role="tab" aria-controls="Exclusions" aria-selected="false">Exclusions</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Facilities-tab" data-bs-toggle="tab" data-bs-target="#Facilities" type="button" role="tab" aria-controls="Facilities" aria-selected="false">Facilities</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="TandC-tab" data-bs-toggle="tab" data-bs-target="#TandC" type="button" role="tab" aria-controls="TandC" aria-selected="false">T&C</button>
+                    </li>
+                </ul>
+
+
+                <div class="tab-content my-3" id="listingTabContent">
+
+                    <div class="tab-pane fade show active" id="Inclusions" role="tabpanel" aria-labelledby="Inclusions-tab">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon1.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">Base Fare for 50 km</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon2.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">Driver Allowance</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon3.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">State Tax & Toll</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon4.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">GST (5%)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="Exclusions" role="tabpanel" aria-labelledby="Exclusions-tab">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon5.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2"> Pay ₹18/km after 50 km </p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon6.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">Multiple pickups/drops</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon7.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">Parking</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="Facilities" role="tabpanel" aria-labelledby="Facilities-tab">
+                        <div class="d-flex justify-content-center flex-wrap">
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon8.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2"> 4 seater</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon9.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">2 bags</p>
+                            </div>
+                            <div class="d-flex align-items-center m-2">
+                                <img src="images/details_icon10.png" alt="Icon Image">
+                                <p class="text-14 m-0 fw-500 ms-2">AC</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="TandC" role="tabpanel" aria-labelledby="TandC-tab">
+                        <ul>
+                            <li class="text-14">Your Trip has a KM limit. If your usage exceeds this limit, you will be charged for the excess KM used.
+                            <li class="text-14">
+                                For driving between 9:45 pm to 6:00 am on any of the nights, an additional allowance will be applicable and is to be paid to the driver.
+                            </li>
+                            <li class="text-14">
+                                Your trip includes one pick up in Pick-up city and one drop to destination city. It does not include within city travel.
+                            </li>
+                            <li class="text-14">
+                                If your Trip has Hill climbs, cab AC may be switched off during such climbs.</li>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <button class="btn-close"></button>
+            </div>
+
+        </div>
+
+
+    </main>
+    <!-- MIAN SECTION END -->
+
+
+
+    <!-- MAIN FOOTER START -->
+    <footer class="main-footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-4">
+                    <h5>About Crazy Cab</h5>
+
+                    <p class="text-14">Lorem ipsum dolor sitt, eveniet asperiores? Consequuntur similique magni doloribus iusto veritatis molestias eligendi, harum blanditiis commodi perspiciatis ipsum reiciendis voluptatibus aperiam obcaecati recusandae?</p>
+
+                    <div class="social-icons d-flex">
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-dribbble"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-vimeo"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-flex legal">
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privecy Policy</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 my-4 d-flex flex-wrap justify-content-around">
+                    <div class="footer-links">
+                        <h5>Services</h5>
+                        <a href="#">Spot Booking</a>
+                        <a href="#">Package Booking</a>
+                        <a href="#">Airport Booking</a>
+                        <a href="#">Fleet Management</a>
+                        <a href="#">Became a Dirver</a>
+                    </div>
+                    <div class="footer-links">
+                        <h5>About Us</h5>
+                        <a href="#">Company</a>
+                        <a href="#">Testimonials</a>
+                        <a href="#">Contacts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- MAIN FOOTER END -->
+
+
+
+
+    <!-- MODIFY MODAL START -->
+    <div class="modal fade" id="ModifyModal" tabindex="-1" aria-labelledby="ModifyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="formTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="one-way-tab" data-bs-toggle="tab" data-bs-target="#one-way" type="button" role="tab" aria-controls="one-way" aria-selected="true">One Way</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="round-trip-tab" data-bs-toggle="tab" data-bs-target="#round-trip" type="button" role="tab" aria-controls="round-trip" aria-selected="false">Round Trip</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="local-tab" data-bs-toggle="tab" data-bs-target="#local" type="button" role="tab" aria-controls="local" aria-selected="false">Local</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="airport-tab" data-bs-toggle="tab" data-bs-target="#airport" type="button" role="tab" aria-controls="airport" aria-selected="false">Airport</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="formTabContent">
+                        <!-- FORM ONE -->
+                        <div class="tab-pane fade show active" id="one-way" role="tabpanel" aria-labelledby="one-way-tab">
+                            <form class="d-flex justify-content-between flex-wrap py-4 position-relative">
+                                <div class="mb-3 mx-2">
+                                    <label for="one-from" class="form-label">From</label>
+                                    <input type="text" class="form-control" id="one-from" placeholder="Start typing your city">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="one-to" class="form-label">To</label>
+                                    <input type="text" class="form-control" id="one-to" placeholder="Start typing your city">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="one-pickup" class="form-label">Pick Up</label>
+                                    <input type="date" class="form-control" id="one-pickup">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="one-pickup-at" class="form-label">Pick Up At</label>
+                                    <input type="time" class="form-control" id="one-pickup-at">
+                                </div>
+
+                                <a href="cab-listing.html" class="btn-primary find-cab-btn" data-bs-dismiss="modal">Explore Cabs</a>
+                            </form>
+                        </div>
+
+                        <!-- FORM TWO -->
+                        <div class="tab-pane fade" id="round-trip" role="tabpanel" aria-labelledby="round-trip-tab">
+                            <form class="d-flex justify-content-between flex-wrap py-4 position-relative">
+                                <div class="mb-3 mx-2">
+                                    <label for="two-from" class="form-label">From</label>
+                                    <input type="text" class="form-control" id="two-from" placeholder="Start typing your city">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="two-to" class="form-label">To</label>
+                                    <input type="text" class="form-control" id="two-to" placeholder="Start typing your city">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="two-pickup" class="form-label">Pick Up</label>
+                                    <input type="date" class="form-control" id="two-pickup">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="two-return" class="form-label">Return</label>
+                                    <input type="date" class="form-control" id="two-return">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="two-pickup-at" class="form-label">Pick Up At</label>
+                                    <input type="time" class="form-control" id="two-pickup-at">
+                                </div>
+
+                                <a href="cab-listing.html" class="btn-primary find-cab-btn" data-bs-dismiss="modal">Explore Cabs</a>
+                            </form>
+                        </div>
+
+                        <!-- FOMR THREE -->
+                        <div class="tab-pane fade" id="local" role="tabpanel" aria-labelledby="local-tab">
+                            <form class="d-flex flex-wrap py-4 position-relative">
+                                <div class="mb-3 mx-2">
+                                    <label for="three-from" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="three-from" placeholder="Start typing your city">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="three-pickup" class="form-label">Pick Up</label>
+                                    <input type="date" class="form-control" id="three-pickup">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="three-pickup-at" class="form-label">Pick Up At</label>
+                                    <input type="time" class="form-control" id="three-pickup-at">
+                                </div>
+
+                                <a href="cab-listing.html" class="btn-primary find-cab-btn" data-bs-dismiss="modal">Explore Cabs</a>
+                            </form>
+                        </div>
+
+                        <!-- FORM FOUR -->
+                        <div class="tab-pane fade" id="airport" role="tabpanel" aria-labelledby="airport-tab">
+                            <form class="d-flex justify-content-between flex-wrap py-4 position-relative">
+                                <div class="mb-3 mx-2">
+                                    <label for="four-from" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="four-from" placeholder="Start typing your city">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="four-to" class="form-label">Trip</label>
+                                    <select class="form-select">
+                                        <option value="Pick up form Airport">Pick up form Airport</option>
+                                        <option value="Drop to Airport" selected>Drop to Airport</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="four-address" class="form-label">Pick up Address</label>
+                                    <input type="text" class="form-control" id="four-address" placeholder="Enter your address">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="four-pickup" class="form-label">Pick Up</label>
+                                    <input type="date" class="form-control" id="four-pickup">
+                                </div>
+                                <div class="mb-3 mx-2">
+                                    <label for="four-pickup-at" class="form-label">Pick Up At</label>
+                                    <input type="time" class="form-control" id="four-pickup-at">
+                                </div>
+
+                                <a href="cab-listing.html" class="btn-primary find-cab-btn" data-bs-dismiss="modal">Explore Cabs</a>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODIFY MODAL END -->
+
+
+
+    <!-- CUSTOM JS FILE -->
+    <script src="js/main.js"></script>
+
+    <!-- BOOTSTRAP JS FILE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+    <script>
+        // Tooltip initialization 
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>

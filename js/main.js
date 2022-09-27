@@ -43,3 +43,39 @@ navbarToggler.addEventListener("click", () => {
 		icon.style.backgroundImage = "var(--bs-navbar-toggler-icon-bg)";
 	}
 });
+
+// LISTING DETAILS FUNCTIONALITY
+const listingDetailsBtn = document.querySelectorAll(".listing-details-btn");
+const listingDetailsCloseBtn = document.querySelectorAll(
+	".listing-details .btn-close"
+);
+
+const listingDetails = document.querySelectorAll(".listing-details");
+
+listingDetailsBtn.forEach((item, index) => {
+	item.addEventListener("click", () => {
+		if (item.firstElementChild.classList[1] == "bi-chevron-down") {
+			item.firstElementChild.classList.replace(
+				"bi-chevron-down",
+				"bi-chevron-up"
+			);
+			listingDetails[index].style.display = "block";
+		} else {
+			item.firstElementChild.classList.replace(
+				"bi-chevron-up",
+				"bi-chevron-down"
+			);
+			listingDetails[index].style.display = "none";
+		}
+	});
+});
+
+listingDetailsCloseBtn.forEach((element, elIndex) => {
+	element.addEventListener("click", () => {
+		listingDetails[elIndex].style.display = "none";
+		listingDetailsBtn[elIndex].firstElementChild.classList.replace(
+			"bi-chevron-up",
+			"bi-chevron-down"
+		);
+	});
+});
