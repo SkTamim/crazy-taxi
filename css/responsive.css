@@ -44,3 +44,18 @@
 		text-align: start !important;
 	}
 }
+@media screen and (max-width: 479px) {
+	.find-cab-btn {
+		font-size: 16px;
+		padding: 8px 20px !important;
+		width: max-content;
+	}
+	#formTabContent form > div {
+		width: 100%;
+	}
+	.book-now-section {
+		padding: 20px 10px;
+	}
+	.book-now-section .nav-link {
+	}
+}
